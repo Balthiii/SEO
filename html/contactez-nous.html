@@ -1,0 +1,117 @@
+<!-- En tête HTML-->
+
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>CodePulse - École d'informatique en alternance et initial à Lyon</title>
+    <meta name="description" content="Code Pulse - La grande école informatique en alternance et initial à Lyon. Découvrez nos programmes BTS, 
+    Bachelors et Mastères orientés tech et métiers de l'informatique. Formation en programmation, développement d'applications, cybersécurité, cloud, big data et intelligence artificielle.">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormoran+Garamond:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bree+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logoEcole">
+            <img src="../Images/logo/logo.webp" alt="logo Formation"><!--Importation du logo de l'entreprise-->
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html"> Accueil </a></li> <!--Création d'un menu de navigation-->
+                <li><a href="nos-programme.html"> Les Programmes </a></li>
+                <li><a href="contactez-nous.html"> Contact </a></li>
+            </ul>
+        </nav>
+    </header>
+    <img class="ImageBanniere" src="../Images/Bannière/banniere.webp" alt="Bannière Foramtion">
+    <!--Importation d'une bannière-->
+    <h1 class="titrebanniere">Informations Pratiques</h1> <!--Texte présent sur la bannière-->
+
+    <div id="boite"> 
+        <div class="contact">
+            <div class="Informations">TELEPHONE & FAX
+                <p> <!--Numéro de téléphone-->
+                    Tel : +33 (0)6 57 56 94 85
+                    <br>Fax : +33 (0)4 31 45 51 59
+                </p>
+            </div>
+
+            <div class="Informations">ADRESSE <!--Adresse Postale-->
+                <p>26 Av. Tony Garnier 3ème étage, 69007 Lyon
+                    <br> 45.72812112618437, 4.823392726117745
+
+                </p>
+            </div>
+
+
+            <div class="Informations">EMAIL <!--Adresse Mail-->
+                <p>contact@codepulse.com
+
+                </p>
+            </div>
+
+            <div class="Informations">HORAIRES D'OUVERTURE
+                <p>Tous les jours de la semaine:  de 7h30 à 19h00 
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--Importation d'une carte interactive-->
+    <iframe class="maps"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1585.8401150912482!2d4.823084629987779!3d45.72838481530232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea3b47ae01e9%3A0x60671f656b69fb77!2sECOLE%20ISITECH!5e0!3m2!1sfr!2sfr!4v1675192747869!5m2!1sfr!2sfr"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <div class="Formulaire"> <!-- Formulaire de Contact-->
+        <h1>Contactez-nous</h1>
+        <p>Un problème, une question, envie de nous envoyer un message ? N’hésitez pas à utiliser ce formulaire pour
+            prendre contact avec nous !</p>
+        <form action="/page-traitement-donnees" method="post">
+            <div>
+                <label for="nom">Votre nom</label>
+                <input type="text" id="nom" name="nom" placeholder="Martin" required>
+            </div>
+            <div>
+                <label for="email">Votre e-mail</label>
+                <input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
+            </div>
+            <div>
+                <label for="sujet">Quel est le sujet de votre message ?</label>
+                <select name="sujet" id="sujet" required>
+                    <option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
+                    <option value="probleme-reservation">Problème Inscription</option>
+                    <option value="autre">Autre...</option>
+                </select>
+            </div>
+            <div>
+                <label for="message">Votre message</label>
+                <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...."
+                    required></textarea>
+            </div>
+            <div>
+                <button type="submit">Envoyer mon message</button>
+            </div>
+        </form>
+    </div>
+    <div class="piedpage"> <!-- Importation d'un pied de page-->
+        <footer>
+            <div>
+                <p>© 2024 CodePulse - Crédits & mentions légales - données personnelles</p> <!--Texte pied de page-->
+            </div>
+            <a href="https://www.instagram.com">
+                <img class="insta" src="../Images/Réseaux/instagram.webp" alt="Suivez-nous sur Instagram">
+            </a>
+            <a href="https://twitter.com">
+                <img class="twitter" src="../Images/Réseaux/twitter.webp" alt="Suivez-nous sur Twitter">
+        </footer>
+
+    </div>
+</body>
+<!--Fin de page-->
+
+</html>

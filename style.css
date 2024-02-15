@@ -1,0 +1,342 @@
+/* Element pour le corp du document */
+body {
+    margin: 0%;
+    overflow-x: hidden;
+    background-image: url(Images/Background/fond.webp);
+
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Mise en page pour l'Accueil*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Positionnement du logo de l'ecole*/
+.logoEcole{
+    display: flex;
+    justify-content: left;
+    background-color: rgb(199, 197, 197);
+
+}
+
+/*Taille du logo*/
+.logoEcole img {
+    width: 10%;
+}
+
+/*Positionnement de la liste du menu de navigation*/
+.navigation ul {
+    list-style: none;
+    margin-top: -5%;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 10%;
+    font-family: 'Bree Serif', cursive;
+}
+
+/*Positionnement des titres du menu de navigation*/
+.navigation a {
+    text-decoration: none;
+    color: white;
+    font-size: 150%;
+    transition: 0.5s;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+/*Effet animé des titres*/
+.navigation a:hover {
+    color:  rgb(16, 177, 226);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+.txtdebienvenue {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: garamond;
+    font-size: 400%;
+    position: absolute;
+    left: 5%;
+    top: 80%;
+
+}
+
+.contenu h3 {
+    font-weight: bolder;
+    font-size: 200%;
+}
+
+.contenu h4 {
+    font-weight: bolder;
+    font-size: 150%;
+    color: rgb(16, 177, 226);
+}
+
+.contenu p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    font-weight: bolder;
+    text-align: justify;
+}
+
+.contenuProgramme h2, h3 {
+    font-weight: bolder;
+    font-size: 150%;
+    color: rgb(16, 177, 226);
+}
+
+.contenuProgramme p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 120%;
+    color: rgb(0, 0, 0);
+}
+
+/*----------------------------------------------*/
+/*Positionnement et déco des avis*/
+
+.boxavis {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.avis {
+    width: 300px;
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.avis h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.avis p {
+    margin: 1em 0;
+    padding: 0;
+}
+
+.avis:hover {
+    box-shadow: 0 8px 16px 0 black;
+}
+
+.avis div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profil {
+    border-radius: 50%;
+    width: 3vw;
+    height: auto;
+    margin-right: 30px;
+}
+
+/*----------------------------------------------*/
+
+/*Mise en page Bannière*/
+.ImageBanniere {
+    margin-top: 2.5%;
+    width: 100vw;
+    height: 200px;
+    filter: blur(3px);
+}
+
+/*Mise en page titre Bannière*/
+.titrebanniere {
+    color: rgb(252, 252, 252);
+    font-weight: bold;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 400%;
+    position: absolute;
+    top: 12%;
+    left: 5%;
+    cursor: default;
+}
+
+/*Positionnement de la vidéo de présentation */
+.vidéoprésentation {
+    position: relative;
+    width: 100vw; 
+    z-index: -1;
+
+}
+/*---------------------------------------------------------------------------------------------------------*/
+/*Mise en page de la page formulaire de contact*/
+/*---------------------------------------------------------------------------------------------------------*/
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 80vw;
+}
+
+.contact div {
+    margin-top: 10%;
+    width: 10vw;
+}
+
+.Informations {
+    font-size: 30px;
+    color:  rgb(16, 177, 226);
+    font-weight: bold;
+}
+
+.Informations p {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: lighter;
+    font-family: garamond;
+}
+
+/*Carte interactive */
+.maps {
+    width: 300vh;
+    height: 100vh
+}
+
+/*Formulaire de contact*/
+.Formulaire {
+    width: 1000px;
+    border: 2px solid;
+    border-radius: 8px;
+    padding: 0 50px 0 50px;
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Formulaire>h1 {
+    font-weight: 500;
+}
+
+.Formulaire>p {
+    font-weight: 300;
+}
+
+form div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 83px;
+    margin-top: 25px;
+}
+
+form div>label {
+    margin-bottom: 7px;
+    font-weight: 600;
+}
+
+form div>input,
+form div>select,
+form div>textarea {
+    background: rgb(96, 96, 94);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Montserrat, "sans-serif";
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+form div>input,
+form div>select {
+    height: 50px;
+    padding-left: 10px;
+}
+
+form div>select {
+    appearance: none;
+    background-size: 10px;
+    background-position: right 10px top 50%;
+}
+
+form div>textarea {
+    height: 195px;
+    padding: 15px 0px 0px 10px;
+}
+
+form div>input::placeholder,
+form div>textarea::placeholder {
+    color: white;
+}
+
+form div>select:invalid {
+    color: white;
+}
+
+form div>select option {
+    background: white;
+    color: #303030;
+}
+
+form div:last-child {
+    align-items: center;
+    margin-top: 20px;
+}
+
+form button {
+    width: 450px;
+    max-width: 500px;
+    height: 60px;
+    font-weight: 700;
+    font-size: 28px;
+    background: white;
+    border: rgba(48, 48, 48, 0.5) solid 1px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #303030;
+}
+
+/*Footer*/
+/*-----------------------------------------------------------------*/
+.piedpage {
+    background-color: rgb(0, 0, 0);
+    width: auto;
+    height: auto;
+}
+
+.piedpage p {
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    font-family: Arial;
+    color: aliceblue;
+
+}
+
+.insta {
+    position: relative;
+    left: 79%;
+    width: 30px;
+    height: 30px;
+}
+
+.insta:hover {
+    transform: scale(1.3);
+  transition: transform 300ms, ease-in-out-back, background-position 500ms ,ease-in-out-back, box-shadow 300ms linear;
+}
+
+.twitter {
+    position: relative;
+    left: 80%;
+    width: 30px;
+    height: 30px;
+}
+
+.twitter:hover {
+    transform: scale(1.3);
+  transition: transform 300ms, ease-in-out-back, background-position 500ms ,ease-in-out-back, box-shadow 300ms linear;
+}
+
+/*-----------------------------------------------------------------*/
